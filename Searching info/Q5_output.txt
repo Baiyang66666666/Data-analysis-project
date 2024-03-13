@@ -1,0 +1,49 @@
+Conda uses environments to load different sets of Python packages
+type conda env list to see the environments availible.
+23/05/05 07:49:42 INFO SparkContext: Running Spark version 3.3.1
+23/05/05 07:49:42 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+23/05/05 07:49:42 WARN SparkConf: Note that spark.local.dir will be overridden by the value set by the cluster manager (via SPARK_LOCAL_DIRS in mesos/standalone/kubernetes and LOCAL_DIRS in YARN).
+23/05/05 07:49:42 INFO ResourceUtils: ==============================================================
+23/05/05 07:49:42 INFO ResourceUtils: No custom resources configured for spark.driver.
+23/05/05 07:49:42 INFO ResourceUtils: ==============================================================
+23/05/05 07:49:42 INFO SparkContext: Submitted application: Q5
+23/05/05 07:49:42 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+23/05/05 07:49:42 INFO ResourceProfile: Limiting resource is cpu
+23/05/05 07:49:42 INFO ResourceProfileManager: Added ResourceProfile id: 0
+23/05/05 07:49:42 INFO SecurityManager: Changing view acls to: acp22bq
+23/05/05 07:49:42 INFO SecurityManager: Changing modify acls to: acp22bq
+23/05/05 07:49:42 INFO SecurityManager: Changing view acls groups to: 
+23/05/05 07:49:42 INFO SecurityManager: Changing modify acls groups to: 
+23/05/05 07:49:42 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(acp22bq); groups with view permissions: Set(); users  with modify permissions: Set(acp22bq); groups with modify permissions: Set()
+23/05/05 07:49:42 INFO Utils: Successfully started service 'sparkDriver' on port 41337.
+23/05/05 07:49:42 INFO SparkEnv: Registering MapOutputTracker
+23/05/05 07:49:42 INFO SparkEnv: Registering BlockManagerMaster
+23/05/05 07:49:42 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+23/05/05 07:49:42 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+23/05/05 07:49:42 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+23/05/05 07:49:42 INFO DiskBlockManager: Created local directory at /mnt/fastdata/acp22bq/blockmgr-a6d11816-f216-4aa1-8ab0-b657270a1589
+23/05/05 07:49:42 INFO MemoryStore: MemoryStore started with capacity 10.5 GiB
+23/05/05 07:49:42 INFO SparkEnv: Registering OutputCommitCoordinator
+23/05/05 07:49:43 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+23/05/05 07:49:43 INFO Executor: Starting executor ID driver on host sharc-node176.shef.ac.uk
+23/05/05 07:49:43 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+23/05/05 07:49:43 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 46123.
+23/05/05 07:49:43 INFO NettyBlockTransferService: Server created on sharc-node176.shef.ac.uk:46123
+23/05/05 07:49:43 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+23/05/05 07:49:43 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, sharc-node176.shef.ac.uk, 46123, None)
+23/05/05 07:49:43 INFO BlockManagerMasterEndpoint: Registering block manager sharc-node176.shef.ac.uk:46123 with 10.5 GiB RAM, BlockManagerId(driver, sharc-node176.shef.ac.uk, 46123, None)
+23/05/05 07:49:43 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, sharc-node176.shef.ac.uk, 46123, None)
+23/05/05 07:49:43 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, sharc-node176.shef.ac.uk, 46123, None)
+===================Task A========================
+===================Random Forest=========================
+RF accuracy = 0.700045 
+RF area under the curve = 0.697379 
+===================Gradient Boosting=========================
+GBT accuracy = 0.710873 
+GBT area under the curve = 0.708884 
+===========================Task B============================
+===================best param for RF========================
+[{'maxDepth': 10}, {'maxBins': 50}, {'numTrees': 10}]
+=====================best param for GBT======================
+[{'maxDepth': 5}, {'maxIter': 30}, {'stepSize': 0.2}]
+

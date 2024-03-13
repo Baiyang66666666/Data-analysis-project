@@ -1,0 +1,105 @@
+Conda uses environments to load different sets of Python packages
+type conda env list to see the environments availible.
+23/05/04 22:42:28 INFO SparkContext: Running Spark version 3.3.1
+23/05/04 22:42:28 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+23/05/04 22:42:28 WARN SparkConf: Note that spark.local.dir will be overridden by the value set by the cluster manager (via SPARK_LOCAL_DIRS in mesos/standalone/kubernetes and LOCAL_DIRS in YARN).
+23/05/04 22:42:28 INFO ResourceUtils: ==============================================================
+23/05/04 22:42:28 INFO ResourceUtils: No custom resources configured for spark.driver.
+23/05/04 22:42:28 INFO ResourceUtils: ==============================================================
+23/05/04 22:42:28 INFO SparkContext: Submitted application: Q3
+23/05/04 22:42:28 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+23/05/04 22:42:28 INFO ResourceProfile: Limiting resource is cpu
+23/05/04 22:42:28 INFO ResourceProfileManager: Added ResourceProfile id: 0
+23/05/04 22:42:28 INFO SecurityManager: Changing view acls to: acp22bq
+23/05/04 22:42:28 INFO SecurityManager: Changing modify acls to: acp22bq
+23/05/04 22:42:28 INFO SecurityManager: Changing view acls groups to: 
+23/05/04 22:42:28 INFO SecurityManager: Changing modify acls groups to: 
+23/05/04 22:42:28 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(acp22bq); groups with view permissions: Set(); users  with modify permissions: Set(acp22bq); groups with modify permissions: Set()
+23/05/04 22:42:28 INFO Utils: Successfully started service 'sparkDriver' on port 41121.
+23/05/04 22:42:28 INFO SparkEnv: Registering MapOutputTracker
+23/05/04 22:42:28 INFO SparkEnv: Registering BlockManagerMaster
+23/05/04 22:42:28 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+23/05/04 22:42:28 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+23/05/04 22:42:28 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+23/05/04 22:42:28 INFO DiskBlockManager: Created local directory at /mnt/fastdata/acp22bq/blockmgr-260c0811-3896-43db-afc2-79bd99df771c
+23/05/04 22:42:28 INFO MemoryStore: MemoryStore started with capacity 408.9 MiB
+23/05/04 22:42:28 INFO SparkEnv: Registering OutputCommitCoordinator
+23/05/04 22:42:29 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+23/05/04 22:42:29 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+23/05/04 22:42:29 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+23/05/04 22:42:29 INFO Utils: Successfully started service 'SparkUI' on port 4043.
+23/05/04 22:42:29 INFO Executor: Starting executor ID driver on host sharc-node177.shef.ac.uk
+23/05/04 22:42:29 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+23/05/04 22:42:29 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 46360.
+23/05/04 22:42:29 INFO NettyBlockTransferService: Server created on sharc-node177.shef.ac.uk:46360
+23/05/04 22:42:29 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+23/05/04 22:42:29 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, sharc-node177.shef.ac.uk, 46360, None)
+23/05/04 22:42:29 INFO BlockManagerMasterEndpoint: Registering block manager sharc-node177.shef.ac.uk:46360 with 408.9 MiB RAM, BlockManagerId(driver, sharc-node177.shef.ac.uk, 46360, None)
+23/05/04 22:42:29 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, sharc-node177.shef.ac.uk, 46360, None)
+23/05/04 22:42:29 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, sharc-node177.shef.ac.uk, 46360, None)
+=======================Task A================
++------+-------+------+---------+---------------------+
+|userId|movieId|rating|timestamp|percent_rank         |
++------+-------+------+---------+---------------------+
+|28507 |1176   |4.0   |789652004|0.0                  |
+|131160|21     |3.0   |789652009|4.999934500858039E-8 |
+|131160|47     |5.0   |789652009|4.999934500858039E-8 |
+|131160|1079   |3.0   |789652009|4.999934500858039E-8 |
+|108467|10     |3.0   |822873600|1.9999738003432155E-7|
+|134445|10     |3.0   |822873600|1.9999738003432155E-7|
+|108467|11     |4.0   |822873600|1.9999738003432155E-7|
+|134445|11     |4.0   |822873600|1.9999738003432155E-7|
+|108467|57     |4.0   |822873600|1.9999738003432155E-7|
+|134445|21     |5.0   |822873600|1.9999738003432155E-7|
+|53434 |19     |1.0   |822873600|1.9999738003432155E-7|
+|20821 |32     |5.0   |822873600|1.9999738003432155E-7|
+|134445|45     |5.0   |822873600|1.9999738003432155E-7|
+|85252 |2      |4.0   |822873600|1.9999738003432155E-7|
+|134445|58     |5.0   |822873600|1.9999738003432155E-7|
+|85252 |7      |5.0   |822873600|1.9999738003432155E-7|
+|99851 |1      |4.0   |822873600|1.9999738003432155E-7|
+|85252 |10     |5.0   |822873600|1.9999738003432155E-7|
+|99851 |10     |4.0   |822873600|1.9999738003432155E-7|
+|85252 |11     |5.0   |822873600|1.9999738003432155E-7|
++------+-------+------+---------+---------------------+
+only showing top 20 rows
+als1 metrics
+[0.8029408487454508, 0.644714006584065, 0.6157537856224271] [0.7787043037101573, 0.6063803926167208, 0.5942287374459903] [0.7952670860892321, 0.6324497382168581, 0.6016619580277108]
+als2 metrics
+[0.8036061486809284, 0.6457828421977918, 0.6183748043136056] [0.7765780201204683, 0.6030734213342265, 0.5917515453122754] [0.7968617172661006, 0.6349885964442787, 0.604944517699484]
+
+=======================Task B================
+
+=========this is top 5 size clusters in split1====================
+[4416, 4413, 3634, 3628, 3497]
+=========this is largest_cluster_ids1====================
+23/05/04 22:57:20 WARN TaskSetManager: Stage 1798 contains a task of very large size (2468 KiB). The maximum recommended task size is 1000 KiB.
+23/05/04 22:57:22 WARN TaskSetManager: Stage 1799 contains a task of very large size (2468 KiB). The maximum recommended task size is 1000 KiB.
++--------------------+------+----------+
+|            features|userid|prediction|
++--------------------+------+----------+
+|[0.10683029145002...| 13834|        23|
+|[0.21626967191696...| 81406|        23|
+|[0.25501477718353...| 58166|        23|
+|[0.28153702616691...|118084|        23|
+|[0.32769873738288...| 48762|        23|
++--------------------+------+----------+
+only showing top 5 rows
+
+=========this is user_ids_largest_cluster1====================
+[121392, 109770, 118084, 102962, 80734, 58166, 93352, 13834, 34827, 27169]
+=========this is top 5 size clusters in split2====================
+[5691, 5634, 5265, 4813, 4549]
+=========this is top 5 size clusters in split3====================
+[6935, 6828, 6303, 6287, 6238]
+===========Task B 2)===============
+The top 10 movie genres for train split 1 [Row(genre='Drama', count=12009), Row(genre='Comedy', count=7296), Row(genre='Thriller', count=3633), Row(genre='Romance', count=3588), Row(genre='Action', count=3060), Row(genre='Crime', count=2607), Row(genre='Documentary', count=2425), Row(genre='Horror', count=2397), Row(genre='Adventure', count=1963), Row(genre='Sci-Fi', count=1493)]
+23/05/04 22:58:19 WARN TaskSetManager: Stage 1926 contains a task of very large size (3192 KiB). The maximum recommended task size is 1000 KiB.
+23/05/04 22:58:21 WARN TaskSetManager: Stage 1927 contains a task of very large size (3192 KiB). The maximum recommended task size is 1000 KiB.
+The top 10 movie genres for train split 2 [Row(genre='Drama', count=9904), Row(genre='Comedy', count=6141), Row(genre='Thriller', count=3147), Row(genre='Romance', count=2941), Row(genre='Action', count=2740), Row(genre='Crime', count=2221), Row(genre='Horror', count=2211), Row(genre='Documentary', count=2203), Row(genre='Adventure', count=1692), Row(genre='Sci-Fi', count=1322)]
+23/05/04 22:58:51 WARN TaskSetManager: Stage 1940 contains a task of very large size (3916 KiB). The maximum recommended task size is 1000 KiB.
+23/05/04 22:58:54 WARN TaskSetManager: Stage 1941 contains a task of very large size (3916 KiB). The maximum recommended task size is 1000 KiB.
+23/05/04 22:59:12 WARN MemoryStore: Not enough space to cache rdd_92_0 in memory! (computed 301.1 MiB so far)
+23/05/04 22:59:17 WARN MemoryStore: Not enough space to cache rdd_2930_0 in memory! (computed 87.8 MiB so far)
+23/05/04 22:59:17 WARN BlockManager: Persisting block rdd_2930_0 to disk instead.
+The top 10 movie genres for train split 3 [Row(genre='Drama', count=8891), Row(genre='Comedy', count=5737), Row(genre='Thriller', count=2801), Row(genre='Romance', count=2713), Row(genre='Action', count=2448), Row(genre='Documentary', count=2061), Row(genre='Horror', count=2008), Row(genre='Crime', count=1927), Row(genre='Adventure', count=1511), Row(genre='Sci-Fi', count=1194)]
